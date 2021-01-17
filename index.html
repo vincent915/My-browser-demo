@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html leng="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!--========== CSS =========-->
+        <link rel="stylesheet" href="style.css">   
+        <title>柒日 - Seven Days</title>
+    </head>
+    <body>
+        <!--============= HEADER =============-->
+        <header>
+            <a href="#" class="logo"><!--img src="img/logo_w160xh63 .png"</img-->柒日<span>.</span></span></a>
+            <ul class="navigation">
+                <li><a href="#banner">首頁</a></li>
+                <li><a href="#about">柒日大小事</a></li>
+                <li><a href="#menu">精選茗飲</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+
+            </ul>
+        </header>
+        <section class="banner" id="banner">
+            <div class="content">
+                <h2>星期柒 只屬於自己的小確幸假期</h2>
+                <p>【內文測試】文案內容可放置於此。</p>
+                <a href="#menu" class="btn">精選茗飲</a>
+            </div>
+        </section>
+
+        <!--============= ABOUT =============-->
+        <section class="about" id="about">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titleText"><span>柒</span>日大小事</h2>
+                    <p>最初的柒日是由6位在職訓局的【電腦網路技術應用與設計】班上的同學一同協力構思的品牌，當時的技術還不是那麼的純熟，所以在期末專題的專案中的初版作品並不是那麼的理想。<br>
+                    經過了3年，也因為大家在結訓之後也各自走上了不同的路，這一個有如我們6位所共同努力想出的孩子就只能讓它沉睡了嗎？<br>
+                    不！我並不希望當時的成果就這樣子沉睡下去，所以我決定重新整合我這幾年所學會的技術應用在這上面，賦予【柒日】一個新的面貌！<br>
+                    這個就是現在各位所看到的新柒日的呈現！<br>
+                    </p>
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img src="img/about_img.jpg" title="精選茗飲">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--============= MENU =============-->
+        <section class="menu" id="menu">
+            <div class="title">
+                <h2 class="titleText">精選<span>茗</span>飲</h2>
+                <p>【內文測試】文案內容可放置於此。</p>
+            </div>
+            <div class="content">
+                <!--First Product-->
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/黑珍珠奶茶.png">
+                    </div>
+                    <div class="text">
+                        <h3>黑糖珍珠奶茶</h3>
+                    </div>
+                </div>
+
+                <!--Second Product-->
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/綠茶.png">
+                    </div>
+                    <div class="text">
+                        <h3>茗傳綠茶</h3>
+                    </div>
+                </div>
+
+                <!--Third Product-->
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/萃選日出紅茶.png">
+                    </div>
+                    <div class="text">
+                        <h3>萃選日出紅茶</h3>
+                    </div>
+                </div>
+
+                <!--More Button-->
+                <div class="title">
+                    <a href="#" class="btn">更多精選</a></div>
+
+            </div>
+        </section>
+
+        <!--========== CONTACT =========-->
+        <section class="contact" id="contact">
+            <div class="title">
+                <h2 class="titleText" style="color: #fff;"><span style="color: #30cc00;">聯</span>絡我們</h2>
+                <p style="color: #fff;">【內文測試】文案內容可放置於此。</p>
+            </div>
+            <div class="contactForm">
+                <h3>訊息專區</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="姓名">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="您想要說的內容"></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="送出">
+                </div>
+            </div>
+        </section>
+
+        <!--========== FOOTER =========-->
+        <footer class="copyrightText">Copyright © 2021 Seven-Days All rights reserved.</footer>
+
+
+
+        <!--========== JAVASCRIPT =========-->
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
+
+
+    </body>
+</html>
